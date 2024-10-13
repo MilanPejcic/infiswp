@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fußballer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+        <script src="js/jss.js"></script>
+        <link rel="stylesheet" href="css/Css.css">
+        <style>
+            body{
+              margin: 0;
+              padding: 0;
+              font-family: sans-serif;
+            }
+            main{
+              margin: 5vh 15%;
+            }
+            h1{
+              font-size: 40px;
+              font-weight: 400;
+              text-align: center;
+            }
+            img{
+              width:50%;
+              height:auto;
+            }
+            p{
+              text-align: justify;
+              font-size: 18px;
+            }
+            label{
+                position: absolute;
+                width: 50px;
+                height: 26px;
+                right: 20px;
+                top: 20px;
+                border: 2px solid;
+                border-radius: 20px;
+            }
+            label:before{
+                position: absolute;
+                content: '';
+                width:20px;
+                height: 20px;
+                left: 1px;
+                top: 1px;
+                border-radius: 50%;
+                background: #000;
+                cursor: pointer;
+                transition: 1s;
+            }
+            label.active:before{
+                left: 24px;
+                background: #fff;
+            }
+            body.night{
+                background: #000;
+                color: #fff;
+            }
+            @media screen and (min-width:900px) {
+              .respon{
+                display: flex;
+              }
+              img{
+                height:50%;
+                width:auto;
+                padding-top: 3vh;
+                padding-right: 5%;
+              }
+              p{
+                max-width: 80%;
+                line-height: 30px;
+              }
+            }
+        </style>
+        <style>
+             #time {
+            font-size: 2em;
+            margin: 20px;
+        }
+        </style>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <label  id="dark-change"></label>
+          </header>
+        <table class="position-relative mx-100 mx-md-auto">
+            <caption class="caption-top"><h1>Ballon`dor Ranking 2013</h1></caption>
+        <thead>
+            
+            <tr>
+              <th class="border border-dark bg-secondary p-2">Platzierung</th>
+              <th class="border border-dark bg-secondary p-2">Fußballspieler</th>
+              <th class="border border-dark bg-secondary p-2">Nationalsteam</th>
+              <th class="border border-dark bg-secondary p-2">Verein(e)</th>
+              <th class="border border-dark bg-secondary p-2">Prozentanteil</th>
+              <th class="border border-dark bg-secondary p-2">Stimmen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td class="text-center border border-dark bg-warning p-2">1.</td>
+              <td class="text-center border border-dark bg-warning p-2">Christiano Ronaldo</td>
+              <td class="border border-dark bg-warning p-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/35px-Flag_of_Portugal.svg.png" alt="Portugal">  Portugal</td>
+              <td class="border border-dark bg-warning p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/35px-Flag_of_Spain.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/Real_Madrid_CF">Real Madrid</a></td>
+              <td class="text-center border border-dark bg-warning p-2">27,99%</td>
+              <td class="text-center border border-dark bg-warning p-2">1365</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+              <td class="text-center border border-dark p-2 bg-secondary">2.</td>
+              <td class="text-center border border-dark p-2 bg-secondary">Lionel Messi</td>
+              <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/35px-Flag_of_Argentina.svg.png" alt="Argentinien">  Argentinien</td>
+              <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/35px-Flag_of_Spain.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/FC_Barcelona">Barcelona</a></td>
+              <td class="text-center border border-dark p-2 bg-secondary">24,72%</td>
+              <td class="text-center border border-dark p-2 bg-secondary">1205</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2">3.</td>
+                <td class="text-center border border-dark p-2">Franck Ribéry</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/35px-Flag_of_France.svg.png" alt="">Frankreich</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/35px-Flag_of_Germany.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/FC_Bayern_Munich">Bayern München</a></td>
+                <td class="text-center border border-dark p-2">23,36%</td>
+                <td class="text-center border border-dark p-2">1127</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2 bg-secondary">4.</td>
+                <td class="text-center border border-dark p-2 bg-secondary">Zlatan Ibrahimović</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/35px-Flag_of_Sweden.svg.png" alt="">Schweden</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/35px-Flag_of_France.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC">Paris Saint-Germain</a></td>
+                <td class="text-center border border-dark p-2 bg-secondary">5,29%</td>
+                <td class="text-center border border-dark p-2 bg-secondary">257</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2">5.</td>
+                <td class="text-center border border-dark p-2">Neymar</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/33px-Flag_of_Brazil.svg.png" alt="">Brasilien</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/33px-Flag_of_Brazil.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/Santos_FC">Santos</a><br><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/35px-Flag_of_Spain.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/FC_Barcelona">Barcelona</a></td>
+                <td class="text-center border border-dark p-2">3,17%</td>
+                <td class="text-center border border-dark p-2">155</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2 bg-secondary">6.</td>
+                <td class="text-center border border-dark p-2 bg-secondary">Andrés Iniesta</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/35px-Flag_of_Spain.svg.png" alt="">Spanien</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/35px-Flag_of_Spain.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/FC_Barcelona">Barcelona</a></td>
+                <td class="text-center border border-dark p-2 bg-secondary">2,08%</td>
+                <td class="text-center border border-dark p-2 bg-secondary">103</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2">7.</td>
+                <td class="text-center border border-dark p-2">Robin van Persie</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/35px-Flag_of_the_Netherlands.svg.png" alt="">Niederlande</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/35px-Flag_of_England.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/Manchester_United_F.C.">Manchester United</a></td>
+                <td class="text-center border border-dark p-2">1,79%</td>
+                <td class="text-center border border-dark p-2">88</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2 bg-secondary">8.</td>
+                <td class="text-center border border-dark p-2 bg-secondary">Arjen Robben</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/35px-Flag_of_the_Netherlands.svg.png" alt="">Niederlande</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/35px-Flag_of_Germany.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/FC_Bayern_Munich">Bayern München</a></td>
+                <td class="text-center border border-dark p-2 bg-secondary">1,77%</td>
+                <td class="text-center border border-dark p-2 bg-secondary">85</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2">9.</td>
+                <td class="text-center border border-dark p-2">Gareth Bale</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Wales.svg/35px-Flag_of_Wales.svg.png" alt="">Wales</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/35px-Flag_of_England.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.">Tottenham Hotspur</a><br><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/35px-Flag_of_Spain.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/Real_Madrid_CF">Real Madrid</a></td>
+                <td class="text-center border border-dark p-2">1,32%</td>
+                <td class="text-center border border-dark p-2">65</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2 bg-secondary">10.</td>
+                <td class="text-center border border-dark p-2 bg-secondary">Andrea Pirlo</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/35px-Flag_of_Italy.svg.png" alt="">Italien</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/35px-Flag_of_Italy.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/Juventus_FC">Juventus</a></td>
+                <td class="text-center border border-dark p-2 bg-secondary">1,11%</td>
+                <td class="text-center border border-dark p-2 bg-secondary">70</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2">11.</td>
+                <td class="text-center border border-dark p-2">Radamel Falcao</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/35px-Flag_of_Colombia.svg.png" alt="">Kolumbien</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/35px-Flag_of_Spain.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/Atl%C3%A9tico_Madrid">Atlético Madrid</a><br><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/35px-Flag_of_France.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/AS_Monaco_FC">Monaco</a></td>
+                <td class="text-center border border-dark p-2">1,08%</td>
+                <td class="text-center border border-dark p-2">53</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2 bg-secondary">12.</td>
+                <td class="text-center border border-dark p-2 bg-secondary">Yaya Touré</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg/35px-Flag_of_C%C3%B4te_d%27Ivoire.svg.png" alt="">Elfenbeinküste</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/35px-Flag_of_England.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C.">Manchester City</a></td>
+                <td class="text-center border border-dark p-2 bg-secondary">0,99%</td>
+                <td class="text-center border border-dark p-2 bg-secondary">48</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2">13.</td>
+                <td class="text-center border border-dark p-2">Robert Lewandowski</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/35px-Flag_of_Poland.svg.png" alt="">Polen</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/35px-Flag_of_Germany.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/Borussia_Dortmund">Borrusia Dortmund</a></td>
+                <td class="text-center border border-dark p-2">0,92%</td>
+                <td class="text-center border border-dark p-2">43</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2 bg-secondary">14.</td>
+                <td class="text-center border border-dark p-2 bg-secondary">Philipp Lahm</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/35px-Flag_of_Germany.svg.png" alt="">Deutschland</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/35px-Flag_of_Germany.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/FC_Bayern_Munich">Bayern München</a></td>
+                <td class="text-center border border-dark p-2 bg-secondary">0,82%</td>
+                <td class="text-center border border-dark p-2 bg-secondary">40</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td class="text-center border border-dark p-2">14.</td>
+                <td class="text-center border border-dark p-2">Xavi</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/35px-Flag_of_Spain.svg.png" alt="">Spanien</td>
+                <td class="border border-dark p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/35px-Flag_of_Spain.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/FC_Barcelona">Barcelona</a></td>
+                <td class="text-center border border-dark p-2">0,82%</td>
+                <td class="text-center border border-dark p-2">40</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="text-center border border-dark p-2 bg-secondary">16.</td>
+                <td class="text-center border border-dark p-2 bg-secondary">Mesut Özil</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/35px-Flag_of_Germany.svg.png" alt="">Deutschland</td>
+                <td class="border border-dark p-2 bg-secondary"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/35px-Flag_of_Spain.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/Real_Madrid_CF">Real Madrid</a><br><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/35px-Flag_of_England.svg.png" alt=""><a href="https://en.wikipedia.org/wiki/Arsenal_F.C.">Arsenal</a></td>
+                <td class="text-center border border-dark p-2 bg-secondary">0,71%</td>
+                <td class="text-center border border-dark p-2 bg-secondary">35</td>
+            </tr>
+        </tfoot>
+        </table>
+        <table>
+            <caption class="caption-top">Welche Personen haben im Februar Geburtstag?</caption>
+            <thead>
+                <tr>
+                    <th class="text-center border border-dark p-2">Datum</th>
+                    <th class="text-center border border-dark p-2">Personen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="text-center border border-dark p-2">01-02</th>
+                    <th class="text-center border border-dark p-2">Harry Styles</th>
+                </tr>
+                <tr>
+                    <th class="text-center border border-dark p-2">02-02</th>
+                    <th class="text-center border border-dark p-2">Gerard Piqué</th>
+                </tr>
+                <tr>
+                    <th class="text-center border border-dark p-2">03-02</th>
+                    <th class="text-center border border-dark p-2">Isla Fisher</th>
+                </tr>
+                <tr>
+                    <th class="text-center border border-dark p-2">04-02</th>
+                    <th class="text-center border border-dark p-2">Zach King</th>
+                </tr>
+                <tr>
+                    <th rowspan="2" class="text-center border border-dark p-2">05-02</th>
+                    <th class="text-center border border-dark p-2">Christiano Ronaldo</th>
+                  </tr>
+                  <tr>
+                    <th class="text-center border border-dark p-2">Neymar</th>
+                  </tr>
+            </tbody>
+        </table>
+    </main>
+    <h2>So sieht der Ballon`dor aus:</h2>
+    <div id="Ballon"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Camp_Nou_Experience_%28Ank_Kumar%2C_INFOSYS%29_02.jpg" alt="" class="w-25"></div>
+    <h2 class="top-50">Folgender Spieler hat gewonnen:</h2>
+    <div id="Christiano"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Cristiano_Ronaldo_-_Croatia_vs._Portugal%2C_10th_June_2013_%28cropped%29.jpg/248px-Cristiano_Ronaldo_-_Croatia_vs._Portugal%2C_10th_June_2013_%28cropped%29.jpg" alt="" class="w-25"></div>
+    <div id="time">00:00:00</div>
+        <button id="startButton">Start</button>
+        <button id="stopButton">Stop</button>
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+    <script>
+        let timer = null; 
+
+
+function updateTime() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString(); 
+    document.getElementById('time').textContent = timeString;
+}
+
+
+function startTimer() {
+    if (timer === null) { 
+        timer = setInterval(updateTime, 1000); 
+        updateTime(); 
+    }
+}
+
+
+function stopTimer() {
+    if (timer !== null) { 
+        clearInterval(timer); 
+        timer = null; 
+    }
+}
+
+
+document.getElementById('startButton').addEventListener('click', startTimer);
+document.getElementById('stopButton').addEventListener('click', stopTimer);
+    </script>
+</body>
+</html>
