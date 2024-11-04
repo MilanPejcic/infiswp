@@ -1,0 +1,48 @@
+body{
+    background-color: #5286c1;
+}
+.grid-container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 930px;
+    grid-template-areas: 
+    "eins zwei zwei fuenf sechs"
+    "eins drei vier vier sieben";
+}
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        width: 370px;
+        grid-template-areas:
+            "eins drei"
+            "eins fuenf"
+            "zwei zwei"
+            "vier  vier"
+            "sechs sieben";
+    }
+}
+.bild1{
+    grid-area: eins;
+}
+.bild2{
+    grid-area: zwei;
+
+}
+.bild3{
+    grid-area: drei;
+}
+.bild4{
+    grid-area: vier;
+}
+.bild5{
+    grid-area: fuenf;
+}
+.bild6{
+    grid-area: sechs;
+}
+.bild7{
+    grid-area: sieben;
+}
