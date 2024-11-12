@@ -1,0 +1,107 @@
+:root {
+    --color-primary: #00ad6a;
+    --color-secondary: #eafaf1;
+    --color-accent: #1fe374;
+    --color-dark: #080c16;
+    --color-light: #d6dae5;
+    --color-background: #fcfcfc;
+}
+
+body {
+    color: var(--color-dark);
+    background: var(--color-background);
+    background-color: #eafaf1;
+    padding: 2rem;
+}
+.Container{
+    max-width: 1500px;
+}
+.Oben{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1500px;
+    justify-content: flex-end;
+    margin: 0;
+    list-style-type: none;
+}
+.Oben a{
+    display: inline-block;
+    color: #1fe374;
+    cursor: pointer;
+    height: 18px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration-color: lightgrey;
+    color: lightgrey;
+  }
+.Oben p{
+    color: #1fe374;
+}
+#active{
+    color: #080c16;
+}
+#rahmen:hover{
+    border: solid #00ad6a;
+}
+.Container2{
+    max-width: 1500px;
+}
+.Sache1{
+    position: relative;
+    width: 450px;
+}
+.Sache2{
+    position: relative;
+    width: 450px;
+}
+.Sache3{
+    position: relative;
+    width: 450px;
+}
+.Sache4{
+    position: relative;
+    width: 450px;
+    left: 550px;
+    bottom: 460px;
+}
+.Sache5{
+    position: relative;
+    width: 450px;
+    left: 550px;
+    bottom: 460px;
+}
+.Sache6{
+    position: relative;
+    width: 450px;
+    left: 550px;
+    bottom: 390px;
+}
+.Mitte{
+    display: flex;
+    justify-content: space-between;
+}
+.Links h5{
+    
+    color: #00ad6a;
+}
+.Subscription{
+    width: 500px;
+    border: solid #1fe374;
+}
+#Recommended{
+    background-color: #00ad6a;
+}
+.Container3{
+    padding: 2rem;
+    background-color: white;
+    width: 100%;
+    height: 5000px;
+}
+.Logo{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+
