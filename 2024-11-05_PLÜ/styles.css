@@ -50,36 +50,39 @@ a:hover{
 .Sache1{
     position: relative;
     width: 450px;
+    grid-area: eins;
 }
 .Sache2{
     position: relative;
     width: 450px;
+    grid-area: zwei;
 }
 .Sache3{
     position: relative;
     width: 450px;
+    grid-area: drei;
 }
 .Sache4{
     position: relative;
     width: 450px;
-    left: 550px;
-    bottom: 460px;
+    grid-area: vier;
+    justify-self: start;
 }
 .Sache5{
     position: relative;
     width: 450px;
-    left: 550px;
-    bottom: 460px;
+    grid-area: fuenf;
+    justify-self: start;
 }
 .Sache6{
     position: relative;
     width: 450px;
-    left: 550px;
-    bottom: 390px;
+    grid-area: sechs;
+    justify-self: start;
 }
 .Mitte{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .Links h5{
     
@@ -87,21 +90,197 @@ a:hover{
 }
 .Subscription{
     width: 500px;
+    background-color: white;
     border: solid #1fe374;
+    height: 700px;
 }
 #Recommended{
+    height: 30px;
     background-color: #00ad6a;
+    color: #fcfcfc;
 }
 .Container3{
     padding: 2rem;
     background-color: white;
     width: 100%;
-    height: 5000px;
+    height: 1250px;
 }
 .Logo{
     position: absolute;
     top: 50px;
     left: 200px;
 }
-
-
+#gruen{
+    color: #00ad6a;
+    font-size: 0.65rem;
+}
+.grid-container{
+    background-color: white;
+    display: grid;
+    justify-items: end;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "eins vier"
+    "zwei fuenf"
+    "drei sechs"
+}
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        width: 450px;
+        grid-template-areas:
+        "eins"
+        "zwei"
+        "drei"
+        "vier"
+        "fuenf"
+        "sechs"
+    }
+}
+.Container4{
+    background-color: #080c16;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+}
+.Subscription h1{
+    color: #00ad6a;
+}
+#Knopf{
+    width: 150px;
+    height: 45px;
+    background-color: #1fe374;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 180px;
+}
+.Rechts h1{
+    color: #00ad6a;
+}
+#grau2{
+    color: gray;
+}
+#grau1{
+    color: gray;
+}
+#Knopf2{
+    width: 150px;
+    height: 45px;
+    background-color: #1fe374;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 175px;
+}
+.Rechts{
+    width: 500px;
+    background-color: white;
+    height: 500px;
+    top: 50px;
+    position: relative;
+}
+.grau3{
+    background-color: rgb(228, 228, 228);
+}
+.Linkes{
+    width: 50%;
+}
+.Rechtes{
+    width: 50%;
+}
+.Schrift{
+    color: #1fe374;
+    display: flex;
+    justify-content: end;
+}
+#Knopf3{
+    width: auto;
+    height: 45px;
+    background-color: #1fe374;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Product{
+    position: relative;
+    color: white;
+    
+    width: 100px;
+}
+.Company{
+    position: relative;
+    color: #00ad6a;
+    
+    width: 100px;
+}
+.Ressources{
+    position: relative;
+    color: #00ad6a;
+   
+    width: 100px;
+}
+.Features{
+    position: relative;
+    color: white;
+    
+    width: 100px;
+}
+.Pricing{
+    position: relative;
+    color: white;
+    
+    width: 100px;
+}
+.Sign_Up{
+    position: relative;
+    color: #00ad6a;
+   
+    width: 100px;
+}
+.Customer_Stories{
+    position: relative;
+    color: #00ad6a;
+   
+    width: 100px;
+}
+.About{
+    position: relative;
+    color: #00ad6a;
+    
+    width: 100px;
+}
+.Contact{
+    position: relative;
+    color: #00ad6a;
+   
+    width: 100px;
+}
+.Support{
+    position: relative;
+    color: #00ad6a;
+    
+    width: 100px;
+}
+.Blog{
+    position: relative;
+    color: #00ad6a;
+   
+    width: 100px;
+}
+.grid-container2{
+    background-color: #080c16;
+    display: grid;
+    justify-items: end;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "eins zwei drei"
+    "vier sieben zehn"
+    "fuenf acht elf"
+    "sechs neuen";
+}
