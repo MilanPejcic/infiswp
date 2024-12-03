@@ -1,6 +1,6 @@
 import { Database } from "@db/sqlite";
 import { assert } from "@std/assert";
-const dataPath = './nmap-datenfiles';
+const dataPath = ' ./nmap-datenfiles';
 const db = new Database("nmap_data.db");
 const outputFilePath = './outfile.csv';
 
