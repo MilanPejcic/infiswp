@@ -11,7 +11,7 @@ const state = {
 const zieleUndPreise = {
     Bregenz: 90,
     Eisenstadt: 13,
-    Graz: 40,
+    Graz: 40,   
     Innsbruck: 80,
     Klagenfurt: 60,
     Linz: 40,
